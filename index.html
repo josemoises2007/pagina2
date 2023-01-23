@@ -87,3 +87,33 @@ $(window).on('load', function() {
         $(image).css('left', px);
     })*/
     </script>
+  <script>
+/* Invoca Mensagem */
+messagebox("Bem vindo ao Sistema!")
+
+/*********************
+|  JS DO MESSAGEBOX  |
+*********************/
+
+function messagebox(_texto) {
+  // remove alertas antigos
+  let oldMessage = document.getElementsByTagName("messagebox"), index
+  for (index = oldMessage.length - 1; index >= 0; index--) {
+    oldMessage[index].parentNode.removeChild(oldMessage[index]) }
+
+  // constrói alerta
+  const messageBox = document.createElement("messagebox")
+  const texto = document.createTextNode(_texto)
+  messageBox.appendChild(texto)
+  document.body.appendChild(messageBox)
+
+  // define duração
+  messageBox.classList.add('show')
+  setTimeout( function () {
+    if (document.body.contains(messageBox)) {
+      document.body.removeChild(messageBox) }
+  }, 5000)
+}
+
+
+    </script>
