@@ -53,7 +53,7 @@ $(window).on('load', function() {
 </script>
 <script>var headID = document.getElementsByTagName("head")[0];         
     var cssNode = document.createElement('link');
-    var mousewidth = 15;
+    var mousewidth = 1;
     cssNode.type = 'text/css';
     cssNode.rel = 'stylesheet';
     cssNode.media = 'screen';
@@ -67,11 +67,11 @@ $(window).on('load', function() {
     
     }
     
-    image.src="https://user-images.githubusercontent.com/106701602/214141235-99dce83f-1458-4b27-9e64-94874e6d3599.png";
+    image.src="https://user-images.githubusercontent.com/106701602/214306410-79de4e28-ed79-4431-9c64-c5e5ee2315a4.png";
     
     image.style.position = "absolute";
     image.style.top = "0";
-    image.style.left = "0";
+    image.style.left = "50%";
     image.style.zIndex = "999999";
     
     
@@ -81,7 +81,7 @@ $(window).on('load', function() {
     
     document.onmousemove = function(e) {
         image.style.top = e.clientY + (window.pageYOffset || document.documentElement.scrollTop) + "px";
-        image.style.left = (e.clientX  + 2) + "px";
+        image.style.left = (e.clientX  + -71) + "px";
     }
     
     /*$(window).mousemove(function(e){
@@ -92,6 +92,7 @@ $(window).on('load', function() {
         $(image).css('left', px);
     })*/
     </script>
+    
     <script>
 /* Invoca Mensagem */
 messagebox("Bem vindo ao Sistema!")
