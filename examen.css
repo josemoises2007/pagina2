@@ -1,0 +1,203 @@
+body {
+ 
+    cursor: url(download.png), auto;
+ }
+ body{
+ margin: 0;
+ padding: 0;
+ font-family: dolce vita;
+ text-align: center;
+ color:#0c0b38;
+ overflow-y: auto;
+ }
+.overlay{ 
+ z-index: 1;
+ position: fixed;
+ height: 100vh;
+ width: 100vw;
+ top: 0;
+ left: 0;
+ background: #5F9EA0;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ flex-wrap: wrap
+}
+.content{  
+ position: fixed;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ background-image:url("https://user-images.githubusercontent.com/106701602/214144255-7c446f5a-443c-409f-b53c-b21134674741.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: auto;
+ color: FFFF99;
+ display: flex;
+ justify-content: center;
+ align-content: flex-start;
+ flex-wrap: wrap;
+}
+h2{ 
+ margin: 20px 0 0 0;
+ width: 100%;
+ font-size: 50px;
+}
+h3{  
+ margin: 0;
+ width: 100%;
+ margin-bottom: 10px;
+ font-size: 30px;
+}
+iframe{ 
+ padding: 10px;
+ background: #5F9EA0;
+ border-radius: 15px;
+}
+.svgCont{ 
+ width: 15%;}
+ 
+svg{
+ width: 100%;
+ height: auto;
+ }
+ 
+#spinner{  
+ animation: spinner 0.7s linear infinite;
+ transform-origin: center;
+}
+@keyframes spinner{ 
+ 0%{
+   transform: rotate(0deg);
+   stroke: #ff0000 ;}
+ 50%{
+   transform: rotate(180deg);
+   stroke: #800080 ;}
+ 100%{
+   transform: rotate(360deg);
+   stroke: #ff0000;}
+}
+.load{
+ margin: 0;
+ padding: 0;
+ width: 100%;}
+
+span{
+ padding: 0;
+ margin: 0;
+ animation: loading 4s linear infinite;
+ opacity: 0;}
+span:nth-child(3){
+ padding: 0 5px 0 0;}
+span:nth-child(4){
+ padding: 0 0 0 5px; }
+span:nth-child(2), span:nth-child(5){
+ animation: loading 4s linear infinite 1s;}
+span:nth-child(1), span:nth-child(6){
+ animation: loading 4s linear infinite 2s;}
+ 
+@keyframes loading{
+ 0%,50%,100%{
+   opacity: 0}
+ 20%{
+   opacity: 1
+   }
+}
+#mouse {
+    width:75px; 
+    position: absolute;
+    float: left;
+  }
+  *{
+   cursor: hidden; 
+  }
+  /***************
+|  MESSAGEBOX  |
+***************/
+
+messagebox {
+    position: fixed;
+    z-index: 1;
+    visibility: hidden;
+  
+    padding: 16px;
+    min-width: 250px;
+    width: 200px;
+    min-height: 1em;
+    height: auto;
+  
+    right: 20px;
+    top: 80px;
+  
+    background-image: linear-gradient(0deg, rgba(34,193,195,0.43461134453781514) 0%, rgba(65,45,253,0.5214460784313726) 100%),
+     url(https://user-images.githubusercontent.com/106701602/214283243-f489a951-18c3-47fe-9b7d-5ac3e4bdbf4b.jpeg);  
+    background-position:cover;
+    color: white;
+    box-shadow: 3px 3px 10px #DDDDDD;
+  
+  background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 5px;
+    background-position-x: center;
+    background-position-y: 20%;
+background-attachment: auto ;
+    background-size: auto;
+}
+  
+  messagebox.show {
+    visibility: visible;
+  
+    -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+    animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+  }
+  
+  /************
+  |  EFFECTS  |
+  ************/
+  
+  /* Fade In */
+  
+  @-webkit-keyframes fadeIn {
+    from {right: 0; opacity: 0;} 
+    to {right: 20px; opacity: 1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    from {right: 0; opacity: 0;} 
+    to {right: 20px; opacity: 1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    from {right: 0; opacity: 0;} 
+    to {right: 20px; opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {right: 0; opacity: 0;} 
+    to {right: 20px; opacity: 1;}
+  }
+  
+  /* Fade Out */
+  
+  @-webkit-keyframes fadeOut {
+    from {right: 20px; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+  }
+  
+  @-moz-keyframes fadeOut {
+    from {right: 20px; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+  }
+  
+  @-o-keyframes fadeOut {
+    from {right: 20px; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeOut {
+    from {right: 20px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+  }
+  
