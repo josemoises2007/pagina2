@@ -370,10 +370,10 @@ color:white;}
  <img src="download.jpeg" alt="Imagen">
       <h1> José Moises Romero Montano</h1>
 <h2>joseph</h2>
-<ul>
-  <li> 15<span class="loooo"> Años </span></li>
-  <li> 150 <span class="loooo"> dias de programacion </span></li> 
-  <li> 0 <span class="loooo"> seguidores</span></li>
+<ul class="vi">
+  <li class="viv" > 15<span class="loooo"> Años </span></li>
+  <li class="viv"> 150 <span class="loooo"> dias de programacion </span></li> 
+  <li class="viv" > 0 <span class="loooo"> seguidores</span></li>
 </ul>
   <a href="#" class="num"> Sigueme </a>
 </main>
@@ -415,7 +415,7 @@ h1{
 h2{
   font-size:14px;
 }
-ul{
+.vi{
   list-style:none;
   padding-left:0;
   background:blue;
@@ -423,7 +423,7 @@ ul{
   margin-bottom:0;
   
 }
-ul li{
+.vi .viv{
     float:left;/*siempre q ponemos float hay q añadir overflow a su cont. padre*/
     width:33.33%;
     font-size:28px;
@@ -431,10 +431,10 @@ ul li{
     padding:15px 0;
     background:#08A2FF;
 }
-ul li:nth-child(2){
+.vi .viv:nth-child(2){
  background:#007FCE;
 }
-ul li .loooo{
+.vi .viv .loooo{
   color:#9CCFF0;
   display:block;
   font-size:14px;
