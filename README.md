@@ -1,7 +1,11 @@
 # pagina2
 jose
 <h1>este codigo é pra fazer um progress</h1>
-<pre><code><progress id="myprogress" value="10" max="100" ></progress><center>
+<pre><code>
+
+
+
+<progress id="myprogress" value="10" max="100" ></progress><center>
 
 <script>
   setInterval( function(){
